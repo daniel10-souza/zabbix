@@ -16,14 +16,14 @@ Alterar o arquivo de configuração ("zabbix_agentd.conf")que está na pasta con
 
 CONTEÚDO MÍNIMO DO ARQUIVO ZABBIX_AGENTD.CONF:
 
-EnableRemoteCommands=1.
-LogRemoteCommands=1.
-Server="IP do servidor do Zabbix".
-StartAgents=5.
-ServerActive="IP do servidor do Zabbix".
-HostnameItem=system.hostname.
-Timeout=5.
-DebugLevel=3.
+EnableRemoteCommands=1
+LogRemoteCommands=1
+Server="IP do servidor do Zabbix"
+StartAgents=5
+ServerActive="IP do servidor do Zabbix"
+HostnameItem=system.hostname
+Timeout=5
+DebugLevel=3
 
 LogFile=c:\Zabbix\zabbix_agentd.log
 Timeout=3
