@@ -1,5 +1,5 @@
-
 Agente do Zabbix
+
 Procedimento para instalação do agente no Windows
 O monitoramento de servidores e/ou estações de trabalho com MS-Windows pode ser feito através do protocolo SNMP ou através do Agente Zabbix, neste tutorial será abordada a instalação do Agente Zabbix.
 
@@ -23,7 +23,6 @@ ServerActive="IP do servidor do Zabbix"
 HostnameItem=system.hostname
 Timeout=5
 DebugLevel=3
-
 LogFile=c:\Zabbix\zabbix_agentd.log
 Timeout=3
 
