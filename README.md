@@ -22,7 +22,6 @@ LogRemoteCommands=1
 Server="IP do servidor do Zabbix"
 StartAgents=5
 ServerActive="IP do servidor do Zabbix"
-#Hostname=Windows host
 HostnameItem=system.hostname
 Timeout=5
 DebugLevel=3
