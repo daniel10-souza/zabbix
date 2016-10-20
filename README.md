@@ -15,7 +15,6 @@ Alterar o arquivo de configuração ("zabbix_agentd.conf")que está na pasta con
 
 
 CONTEÚDO MÍNIMO DO ARQUIVO ZABBIX_AGENTD.CONF:
-Server=IP do Servidor do Zabbix
 
 EnableRemoteCommands=1
 LogRemoteCommands=1
