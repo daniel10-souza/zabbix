@@ -59,4 +59,4 @@ Se tudo ocorreu bem você recebera as mensagens:
 zabbix_agentd.exe [4156]: Service "ZABBIX Agent" uninstalled successfully.
 zabbix_agentd.exe [4156]: Event source "ZABBIX Agent" uninstalled successfully.
 
-Criado por: Daniel Souza
+Criado por: Daniel Souza.
