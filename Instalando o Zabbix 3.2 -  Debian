@@ -1,0 +1,44 @@
+apt-get update
+wget http://repo.zabbix.com/zabbix/3.2/debian/pool/main/z/zabbix-release/zabbix-release_3.2-1+jessie_all.deb
+dpkg -i zabbix-release_3.2-1+jessie_all.deb
+apt-get update
+apt-get install zabbix-server-mysql zabbix-frontend-php zabbix-agent zabbix-get
+
+Senha do MySQL
+
+mysql -uroot -p
+mysql> create database zabbix character set utf8 collate utf8_bin;
+mysql> grant all privileges on zabbix.* to zabbix@localhost identified by 'zabbix';
+mysql> quit;
+
+cd /usr/share/doc/zabbix-server-mysql
+zcat create.sql.gz | mysql -uzabbix -p zabbix
+
+vim /etc/zabbix/zabbix_server.conf
+
+DBHost=localhost
+DBName=zabbix
+DBUser=zabbix
+DBPassword=zabbix
+
+Reinicie o serviço zabbix-server
+
+service zabbix-server restart 
+
+Ajuste do timezone utilizado pelo Zabbix
+
+
+Execute o comando abaixo para alterar o timezone.
+
+sed -i 's/# php_value date.timezone Europe\/Riga/php_value date.timezone America\/Sao_Paulo/' /etc/zabbix/apache.conf
+
+
+Observação: altere Sao_Paulo caso a sua região for outra.
+
+Instalação do frontend
+
+É necessário reiniciar o serviço do Apache para recarregar as configurações modificadas pela instalação.
+
+ service apache2 restart
+
+Abra o seu navegador favorito e aponte para o IP do teu servidor: http://zabbix
