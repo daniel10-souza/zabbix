@@ -42,3 +42,4 @@ Instalação do frontend
  service apache2 restart
 
 Abra o seu navegador favorito e aponte para o IP do teu servidor: http://zabbix
+http://192.168.32.134/zabbix/setup.php Modelo para setup
