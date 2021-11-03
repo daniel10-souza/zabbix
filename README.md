@@ -5,7 +5,7 @@ zabbix-agent.conf
 
 
 
-![Dashboard Grafana](img/dasboard grafana.jpeg)
+![Diagrama da solução](./img/dashboard_grafana.jpeg)
 
 ## Configuração
 #Monitoramento Issabel
