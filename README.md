@@ -6,7 +6,7 @@
 * Number of calls on E1
 * Registered SIP User
 
-![dashboard](./img/dasboard-grafana.png)
+![dashboard](./img/dasboard.png)
 
 
 
