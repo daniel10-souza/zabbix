@@ -6,7 +6,7 @@ zabbix-agent.conf
 
 
 
-![Diagrama da solução](./img/dasboard-grafana.png)
+![Diagrama](./img/dasboard-grafana.png)
 
 
 ## Configuração
