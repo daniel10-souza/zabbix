@@ -1,17 +1,16 @@
-# Monitoramento Issabel no Grafana
-
-## Arquivo de configuração
-zabbix-agent.conf
+# Grafana monitoring Issabel
 
 
+* Active Channel Monitoring
+* Number of calls processed
+* Number of calls on E1
+* Registered SIP User
+
+![dashboard](./img/dasboard-grafana.png)
 
 
-![Diagrama](./img/dasboard-grafana.png)
 
-
-## Configuração
-#Monitoramento Issabel
-
+## Lines to be inserted into zabbix agent configuration file.
 
 UserParameter=user.asterisk.active.channels,sudo /usr/sbin/asterisk -rvvvvvx 'core show channels' | grep "active channels" | awk '{print $1}'
 UserParameter=user.asterisk.active.calls,sudo /usr/sbin/asterisk -rvvvvvx 'core show channels' | grep "active calls" | awk '{print $1}'
